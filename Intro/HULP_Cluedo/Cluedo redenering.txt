@@ -1,0 +1,20 @@
+s1
+	Mogelijkheid: 	123acBCD	4Ab
+	Onzekerheden:	4Ab
+	zekerheden:	
+	
+
+s2
+	Mogelijkheid: 	1234abcABCD
+	Onzekerheden:	
+	zekerheden:
+
+s3
+	Mogelijkheid: 	134abcABC	2Db
+	Onzekerheden:	2Db
+	zekerheden:
+
+s4
+	Mogelijkheid: 	123acBCD	4Ab
+	Onzekerheden:	4Ab
+	zekerheden:

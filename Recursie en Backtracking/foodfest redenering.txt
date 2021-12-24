@@ -1,0 +1,69 @@
+Lijst Foodtrucks
+Teller Foodtrucks
+
+FOODTRUCK:
+	Lijst gerchten
+	Teller gerechten
+
+
+
+PRIJS > BUDGET:
+	Gerechten Foodtruck ten einde?
+		Ja:
+			Foodtruckteller = 0?
+				ja:
+					return false
+				nee:
+					STEP BACK
+				opnieuw checken
+		nee:
+			Volgend gerecht bij foodtruck
+			opnieuw checken
+
+PRIJS = BUDGET
+	Foodtruck teller ten einde?
+		Ja:
+			TRUE
+			
+		Nee:
+			Gerechten Foodtruck ten einde?
+				Ja:
+					Foodtruckteller = 0?
+						ja:
+							return false
+						nee:
+							STEP BACK
+						opnieuw checken
+				nee:
+					Volgend gerecht bij foodtruck
+					opnieuw checken
+
+PRIJS < BUDGET
+	Foodtrucks ten einde?
+		Nee: 
+			STEP FORWARD
+			
+		Ja:
+			Gerechten Foodtruck ten einde?
+				Ja:
+					STEP BACK
+					
+				Nee:
+					Volgend gerecht	bij foodtruck
+		
+	
+
+
+STEP BACK
+	huidige gerecht teller = 0 
+	foodtruckteller--
+	
+	budget verhogen met huidig gerecht
+	huidige gerecht teller++
+	
+	
+
+STEP FORWARD
+	budget aftrekken 
+	foodtruckteller++
+	
